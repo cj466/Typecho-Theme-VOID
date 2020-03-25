@@ -96,6 +96,7 @@ if($this->is('post') || $this->is('page')) {
     <div id="nav-mobile">
         <section id="pages" data-title="PAGES">
             <nav>
+                <a href="<?php Utils::index(''); ?>">首页</a>
                 <?php $this->widget('Widget_Contents_Page_List')->parse('<a href="{permalink}">{title}</a>'); ?>
             </nav>
         </section>
