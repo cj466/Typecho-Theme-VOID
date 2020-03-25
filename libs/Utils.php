@@ -276,6 +276,7 @@ class Utils
 
         // 主题设置
         $themeSetting = array(
+            'beforeBodyClose' => '', // html 扩展 body标签结束前
             'defaultBanner' => '',
             'enableMath' => false,
             'head' => '',

@@ -175,5 +175,6 @@ $setting = $GLOBALS['VOIDSetting'];
         </script>
         <?php endif; ?>
         <?php $this->footer(); ?>
+        <?php echo $setting['beforeBodyClose']; ?>
     </body>
 </html>
