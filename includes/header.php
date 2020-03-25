@@ -55,7 +55,6 @@ if($this->is('post') || $this->is('page')) {
                 </a>
                 <a class="brand" href="<?php Utils::index(''); ?>"><?php if($setting['name']) echo $setting['name']; else echo $this->options->title; ?></a>
                 <a href="<?php Utils::index(''); ?>">首页</a>
-                <?php $this->widget('Widget_Contents_Page_List')->parse('<a href="{permalink}">{title}</a>'); ?>
                 <span class="dropdown">分类
                     <ul>
                         <?php $this->widget('Widget_Metas_Category_List')->parse('<li><a href="{permalink}">{name}</a></li>'); ?>
@@ -72,6 +71,7 @@ if($this->is('post') || $this->is('page')) {
                     </ul>
                 </span>
                 <?php endforeach; } ?>
+                <?php $this->widget('Widget_Contents_Page_List')->parse('<a href="{permalink}">{title}</a>'); ?>
                 <?php if(!Utils::isPluginAvailable('ExSearch')): ?>
                     <span class="hidden-xs search-form-desktop">
                         <label for="search">搜索</label>
