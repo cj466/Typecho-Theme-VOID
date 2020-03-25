@@ -8,6 +8,14 @@
 
 [![Build](https://github.com/AlanDecode/Typecho-Theme-VOID/workflows/Build/badge.svg)](https://github.com/AlanDecode/Typecho-Theme-VOID/actions) [![downloads](https://img.shields.io/github/downloads/AlanDecode/Typecho-Theme-VOID/total.svg?style=flat-square)](https://github.com/AlanDecode/Typecho-Theme-VOID/releases) [![](https://img.shields.io/github/release/AlanDecode/Typecho-Theme-VOID.svg?style=flat-square)](https://github.com/AlanDecode/Typecho-Theme-VOID/releases) ![](https://img.shields.io/github/license/AlanDecode/Typecho-Theme-VOID.svg?style=flat-square)
 
+针对原主题的二次修改，感谢原作者所作出的贡献！
+
+> 演示博客：[左手的博客](https://blog.fuoshuo.com)
+
+如果您想要查看原作者主题，欢迎访问[此仓库](https://github.com/AlanDecode/Typecho-Theme-VOID)或查看分割线以下内容
+
+---
+
 ## 特性
 
 > 介绍文章：[VOID：现在可以公开的情报](https://blog.imalan.cn/archives/247/)。
@@ -180,6 +188,7 @@ git clone https://github.com/AlanDecode/Typecho-Theme-VOID ./VOID && cd ./VOID
 
 ```bash
 npm install -g gulp
+# 如果很慢，执行这两句 npm cache clean --force; npm config set registry https://registry.npm.taobao.org
 npm install
 ```
 
