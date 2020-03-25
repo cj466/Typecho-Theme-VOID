@@ -53,7 +53,7 @@ if($this->is('post') || $this->is('page')) {
                 <a role=button aria-label="展开导航" class="toggle" target="_self" href="javascript:void(0);" onclick="VOID_Ui.toggleNav(this);">
                     <span></span>
                 </a>
-                <a class="brand" href="<?php Utils::index(''); ?>"><?php if($setting['name']) echo $setting['name']; else echo $this->options->title; ?></a>
+                <a class="brand" href="<?php Utils::index(''); ?>"><?php if($setting['name'] && !Utils::isMobile()) echo $setting['name']; ?></a>
                 <a href="<?php Utils::index(''); ?>">首页</a>
                 <span class="dropdown">分类
                     <ul>
