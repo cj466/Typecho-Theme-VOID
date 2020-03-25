@@ -163,6 +163,9 @@ class VOID_Widget_Comments_Archive extends Widget_Abstract_Comments
                 ><i class="voidicon-thumbs-down"></i> <span class="value"><?php echo $metaArr['dislikes']?></span>
                 </a>
                 <?php } ?>
+                <div class="comment-reply">
+                    <?php $this->reply($singleCommentOptions->replyWord); ?>
+                </div>
             </span>
         </div>
         <div class="comment-content yue">
@@ -172,9 +175,6 @@ class VOID_Widget_Comments_Archive extends Widget_Abstract_Comments
                 onclick="VOID_Vote.toggleFoldComment(<?php echo $this->coid; ?>, this)">点击展开</a>]</span>
             <?php }?>
             <div class="comment-content-inner"><?php echo Contents::parseBiaoQing($this->content); ?></div>
-        </div>
-        <div class="comment-reply">
-            <?php $this->reply($singleCommentOptions->replyWord); ?>
         </div>
     </div>
     <?php if ($this->children) { ?>

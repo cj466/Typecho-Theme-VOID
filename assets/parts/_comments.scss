@@ -178,8 +178,11 @@
                 margin-bottom: 1.5rem;
                 position: relative;
                 .comment-reply{
+                    /*
                     position: absolute;
                     left: 23px;
+                    */
+                    float: right;
                     transform: translateX(-50%);
                     top: calc(46px + 6px);
                 }
