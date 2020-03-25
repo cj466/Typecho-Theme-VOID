@@ -76,6 +76,8 @@ function themeConfig($form)
     $form->addInput($indexStyle);
 
     // 高级设置
+    $defaultGravatar = new Typecho_Widget_Helper_Form_Element_Text('defaultGravatar', NULL, NULL, '默认 Gravatar 评论头像', '');
+    $form->addInput($defaultGravatar);
     $beforeBodyClose = new Typecho_Widget_Helper_Form_Element_Textarea('beforeBodyClose', NULL, NULL, '自定义 HTML 元素拓展 - 在 body 标签结束前', '在 body 标签结束前添加你自己的 HTML 元素<br>你可以在这里使用 script 标签引入js 代码文件或其他内容');
     $form->addInput($beforeBodyClose);
     $reward = new Typecho_Widget_Helper_Form_Element_Text('reward', null, '', '打赏二维码', '图片链接，只允许一张图片，更多请自行合成。');
