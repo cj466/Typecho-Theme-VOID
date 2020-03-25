@@ -606,6 +606,7 @@ var AjaxComment = {
         }
     });
 
+    /*
     window.setInterval(function () {
         var times = new Date().getTime() - Date.parse(VOIDConfig.buildTime);
         times = Math.floor(times / 1000); // convert total milliseconds into total seconds
@@ -618,4 +619,5 @@ var AjaxComment = {
         var seconds = Math.floor(times / 1); // remainder is seconds
         $('#uptime').html(days + ' 天 ' + hours + ' 小时 ' + minutes + ' 分 ' + seconds + ' 秒 ');
     }, 1000);
+    */
 })();

@@ -12,12 +12,17 @@ $setting = $GLOBALS['VOIDSetting'];
 ?>
         <footer>
             <div class="container wide">
-                <section>
-                    <p>© <?php echo date('Y '); ?> <span class="brand"><?php echo $this->options->title; ?></span></p>
+                <!--<section>
+                    <p>© <?php /*echo date('Y '); */?> <span class="brand"><?php /*echo $this->options->title; */?></span></p>
                     <p>感谢陪伴：<span id="uptime"></span></p>
                 </section>
                 <section>
                     <p>Powered by <a href="http://typecho.org/">Typecho</a> • <a href="https://blog.imalan.cn/archives/247/">Theme VOID</a></p>
+                    <p><?php /*echo $setting['footer']; */?></p>
+                </section>-->
+                <section>
+                    <p id="hitokoto">:D 获取中...</p>
+                    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
                     <p><?php echo $setting['footer']; ?></p>
                 </section>
             </div>
