@@ -65,9 +65,11 @@ $setting = $GLOBALS['VOIDSetting'];
                 </div>
             </section>
             <section id="links">
+                <!--
                 <?php if(!$this->user->hasLogin()): ?>
                     <a target="_self" class="link" href="javascript:void(0)" onclick="VOID_Ui.toggleLoginForm()"><i class="voidicon-user"></i></a>       
                 <?php endif; ?>
+                -->
                 <a class="link" title="RSS" target="_blank" href="<?php $this->options->feedUrl(); ?>"><i class="voidicon-rss"></i></a>
                 <?php
                     foreach ($setting['link'] as $link) {
